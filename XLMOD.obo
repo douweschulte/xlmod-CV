@@ -1599,8 +1599,8 @@ relationship: is_side_product_of XLMOD:02040 ! BiPS
 id: XLMOD:01024
 name: ammonium amidated BiPS
 def: "Ammonium amidated bimane bisthiopropionic acid N-succinimidyl ester." [PMID:18838738]
-property_value: deadEndFormula: "C16 H18 N3 O4 S2" xsd:string
-property_value: monoIsotopicMass: "380.073873" xsd:double
+property_value: deadEndFormula: "C16 H19 N3 O4 S2" xsd:string
+property_value: monoIsotopicMass: "381.081698" xsd:double
 is_a: XLMOD:00095 ! ammonium amidation cross-linker related chemical modification
 relationship: is_partially_reacted XLMOD:00021 ! ammonium amidated
 relationship: is_side_product_of XLMOD:02040 ! BiPS
