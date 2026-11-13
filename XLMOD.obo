@@ -1300,7 +1300,7 @@ id: XLMOD:00167
 name: carboxyl reactive group
 def: "Reactive group (-COOH) that reacts with amino (-NH2) groups." [PSI:XL]
 is_a: XLMOD:00100 ! reactive group
-relationship: is_reactive_with XLMOD:00028 ! amine reactive
+relationship: is_reactive_with XLMOD:00028 ! primary amine reactive
 
 [Term]
 id: XLMOD:00168
@@ -1311,7 +1311,7 @@ is_a: XLMOD:00100 ! reactive group
 relationship: is_reactive_with XLMOD:00029 ! sulfhydryl reactive
 relationship: is_reactive_with XLMOD:00030 ! carboxyl reactive
 relationship: is_reactive_with XLMOD:06509 ! phenol reactive
-relationship: is_reactive_with XLMOD:06521 ! phosphate reactive
+relationship: is_reactive_with XLMOD:06521 ! phophate reactive
 
 [Term]
 id: XLMOD:00169
@@ -1328,7 +1328,7 @@ is_a: XLMOD:00100 ! reactive group
 relationship: is_reactive_with XLMOD:00029 ! sulfhydryl reactive
 relationship: is_reactive_with XLMOD:00030 ! carboxyl reactive
 relationship: is_reactive_with XLMOD:06509 ! phenol reactive
-relationship: is_reactive_with XLMOD:06521 ! phosphate reactive
+relationship: is_reactive_with XLMOD:06521 ! phophate reactive
 
 [Term]
 id: XLMOD:00171
@@ -1336,7 +1336,7 @@ name: Ortho-phthalaldehyde
 def: "A lysine-specific reactive group." [PSI:XL]
 synonym: "OPA" EXACT []
 property_value: specificities: "(K)" xsd:string
-is_a: XLMOD:00116 ! aldehyde
+is_a: XLMOD:00116 ! aldehyde group
 
 [Term]
 id: XLMOD:00172
@@ -1614,7 +1614,7 @@ property_value: monoIsotopicMass: "527.107930" xsd:double
 is_a: XLMOD:00096 ! hydrolization cross-linker related chemical modification
 relationship: has_handle XLMOD:00051 ! biotin
 relationship: is_partially_reacted XLMOD:00011 ! hydrolyzed
-relationship: is_side_product_of XLMOD:02041 ! CBDPS
+relationship: is_side_product_of XLMOD:03001 ! CBDPS
 
 [Term]
 id: XLMOD:01026
@@ -1625,7 +1625,7 @@ property_value: monoIsotopicMass: "525.116090" xsd:double
 is_a: XLMOD:00095 ! ammonium amidation cross-linker related chemical modification
 relationship: has_handle XLMOD:00051 ! biotin
 relationship: is_partially_reacted XLMOD:00021 ! ammonium amidated
-relationship: is_side_product_of XLMOD:02041 ! CBDPS
+relationship: is_side_product_of XLMOD:03001 ! CBDPS
 
 [Term]
 id: XLMOD:01027
@@ -1635,7 +1635,7 @@ property_value: deadEndFormula: "C6 H8 O3" xsd:string
 property_value: monoIsotopicMass: "128.047344" xsd:double
 is_a: XLMOD:00096 ! hydrolization cross-linker related chemical modification
 relationship: is_partially_reacted XLMOD:00011 ! hydrolyzed
-relationship: is_side_product_of XLMOD:02044 ! DSA
+relationship: is_side_product_of XLMOD:02043 ! DSA
 
 [Term]
 id: XLMOD:01028
@@ -1645,7 +1645,7 @@ property_value: deadEndFormula: "C6 H9 N1 O2" xsd:string
 property_value: monoIsotopicMass: "127.063329" xsd:double
 is_a: XLMOD:00095 ! ammonium amidation cross-linker related chemical modification
 relationship: is_partially_reacted XLMOD:00021 ! ammonium amidated
-relationship: is_side_product_of XLMOD:02044 ! DSA
+relationship: is_side_product_of XLMOD:02043 ! DSA
 
 [Term]
 id: XLMOD:01029
@@ -1656,7 +1656,7 @@ property_value: monoIsotopicMass: "357.992943" xsd:double
 is_a: XLMOD:00096 ! hydrolization cross-linker related chemical modification
 relationship: has_handle XLMOD:00054 ! DNB
 relationship: is_partially_reacted XLMOD:00011 ! hydrolyzed
-relationship: is_side_product_of XLMOD:02045 ! DNBDPS
+relationship: is_side_product_of XLMOD:02044 ! DNBDPS
 
 [Term]
 id: XLMOD:01030
@@ -1667,7 +1667,7 @@ property_value: monoIsotopicMass: "356.001102" xsd:double
 is_a: XLMOD:00095 ! ammonium amidation cross-linker related chemical modification
 relationship: has_handle XLMOD:00054 ! DNB
 relationship: is_partially_reacted XLMOD:00021 ! ammonium amidated
-relationship: is_side_product_of XLMOD:02045 ! DNBDPS
+relationship: is_side_product_of XLMOD:02044 ! DNBDPS
 
 [Term]
 id: XLMOD:01031
@@ -1677,7 +1677,7 @@ property_value: deadEndFormula: "C28 H41 N5 O12 S1" xsd:string
 property_value: monoIsotopicMass: "671.247243" xsd:double
 is_a: XLMOD:00096 ! hydrolization cross-linker related chemical modification
 relationship: is_partially_reacted XLMOD:00011 ! hydrolyzed
-relationship: is_side_product_of XLMOD:02046 ! TEABS
+relationship: is_side_product_of XLMOD:02045 ! TEABS
 
 [Term]
 id: XLMOD:01032
@@ -1687,7 +1687,7 @@ property_value: deadEndFormula: "C28 H41 N6 O11 S1" xsd:string
 property_value: monoIsotopicMass: "669.255402" xsd:double
 is_a: XLMOD:00095 ! ammonium amidation cross-linker related chemical modification
 relationship: is_partially_reacted XLMOD:00021 ! ammonium amidated
-relationship: is_side_product_of XLMOD:02046 ! TEABS
+relationship: is_side_product_of XLMOD:02045 ! TEABS
 
 [Term]
 id: XLMOD:01033
@@ -1698,7 +1698,7 @@ property_value: monoIsotopicMass: "200.041700" xsd:double
 is_a: XLMOD:00096 ! hydrolization cross-linker related chemical modification
 relationship: is_labelled XLMOD:00010 ! deuterium labelled
 relationship: is_partially_reacted XLMOD:00011 ! hydrolyzed
-relationship: is_side_product_of XLMOD:02049 ! DTSSP
+relationship: is_side_product_of XLMOD:02048 ! DTSSP-d8
 
 [Term]
 id: XLMOD:01034
@@ -1709,7 +1709,7 @@ property_value: monoIsotopicMass: "199.057685" xsd:double
 is_a: XLMOD:00095 ! ammonium amidation cross-linker related chemical modification
 relationship: is_labelled XLMOD:00010 ! deuterium labelled
 relationship: is_partially_reacted XLMOD:00021 ! ammonium amidated
-relationship: is_side_product_of XLMOD:02049 ! DTSSP
+relationship: is_side_product_of XLMOD:02048 ! DTSSP-d8
 
 [Term]
 id: XLMOD:01035
@@ -1762,7 +1762,7 @@ property_value: monoIsotopicMass: "256.133624" xsd:double
 is_a: XLMOD:00096 ! hydrolization cross-linker related chemical modification
 relationship: is_labelled XLMOD:00010 ! deuterium labelled
 relationship: is_partially_reacted XLMOD:00011 ! hydrolyzed
-relationship: is_side_product_of XLMOD:02050 ! EGS-d12
+relationship: is_side_product_of XLMOD:02049 ! EGS-d12
 
 [Term]
 id: XLMOD:01040
@@ -1773,7 +1773,7 @@ property_value: monoIsotopicMass: "254.141783" xsd:double
 is_a: XLMOD:00095 ! ammonium amidation cross-linker related chemical modification
 relationship: is_labelled XLMOD:00010 ! deuterium labelled
 relationship: is_partially_reacted XLMOD:00021 ! ammonium amidated
-relationship: is_side_product_of XLMOD:02050 ! EGS-d12
+relationship: is_side_product_of XLMOD:02049 ! EGS-d12
 
 [Term]
 id: XLMOD:01041
@@ -1806,7 +1806,7 @@ property_value: monoIsotopicMass: "134.067473" xsd:double
 is_a: XLMOD:00096 ! hydrolization cross-linker related chemical modification
 relationship: is_labelled XLMOD:00036 ! 13C labelled
 relationship: is_partially_reacted XLMOD:00011 ! hydrolyzed
-relationship: is_side_product_of XLMOD:02054 ! DSA-13C6
+relationship: is_side_product_of XLMOD:02053 ! DSA-13C6
 
 [Term]
 id: XLMOD:01044
@@ -1817,7 +1817,7 @@ property_value: monoIsotopicMass: "133.083458" xsd:double
 is_a: XLMOD:00095 ! ammonium amidation cross-linker related chemical modification
 relationship: is_labelled XLMOD:00036 ! 13C labelled
 relationship: is_partially_reacted XLMOD:00021 ! ammonium amidated
-relationship: is_side_product_of XLMOD:02054 ! DSA-13C6
+relationship: is_side_product_of XLMOD:02053 ! DSA-13C6
 
 [Term]
 id: XLMOD:01045
@@ -1829,7 +1829,7 @@ is_a: XLMOD:00096 ! hydrolization cross-linker related chemical modification
 relationship: has_handle XLMOD:00051 ! biotin
 relationship: is_labelled XLMOD:00010 ! deuterium labelled
 relationship: is_partially_reacted XLMOD:00011 ! hydrolyzed
-relationship: is_side_product_of XLMOD:02055 ! CBDPS-d8
+relationship: is_side_product_of XLMOD:02054 ! CBDPS-d8
 
 [Term]
 id: XLMOD:01046
@@ -1841,7 +1841,7 @@ is_a: XLMOD:00095 ! ammonium amidation cross-linker related chemical modificatio
 relationship: has_handle XLMOD:00051 ! biotin
 relationship: is_labelled XLMOD:00010 ! deuterium labelled
 relationship: is_partially_reacted XLMOD:00021 ! ammonium amidated
-relationship: is_side_product_of XLMOD:02055 ! CBDPS-d8
+relationship: is_side_product_of XLMOD:02054 ! CBDPS-d8
 
 [Term]
 id: XLMOD:01047
@@ -1852,7 +1852,7 @@ property_value: monoIsotopicMass: "527.107930" xsd:double
 is_a: XLMOD:00096 ! hydrolization cross-linker related chemical modification
 relationship: has_handle XLMOD:00051 ! biotin
 relationship: is_partially_reacted XLMOD:00011 ! hydrolyzed
-relationship: is_side_product_of XLMOD:02056 ! CBDPSS
+relationship: is_side_product_of XLMOD:02055 ! CBDPSS
 
 [Term]
 id: XLMOD:01048
@@ -1863,7 +1863,7 @@ property_value: monoIsotopicMass: "525.116090" xsd:double
 is_a: XLMOD:00095 ! ammonium amidation cross-linker related chemical modification
 relationship: has_handle XLMOD:00051 ! biotin
 relationship: is_partially_reacted XLMOD:00021 ! ammonium amidated
-relationship: is_side_product_of XLMOD:02056 ! CBDPSS
+relationship: is_side_product_of XLMOD:02055 ! CBDPSS
 
 [Term]
 id: XLMOD:01049
@@ -1875,7 +1875,7 @@ is_a: XLMOD:00096 ! hydrolization cross-linker related chemical modification
 relationship: has_handle XLMOD:00051 ! biotin
 relationship: is_labelled XLMOD:00010 ! deuterium labelled
 relationship: is_partially_reacted XLMOD:00011 ! hydrolyzed
-relationship: is_side_product_of XLMOD:02057 ! CBDPSS-d8
+relationship: is_side_product_of XLMOD:02056 ! CBDPSS-d8
 
 [Term]
 id: XLMOD:01050
@@ -1887,7 +1887,7 @@ is_a: XLMOD:00095 ! ammonium amidation cross-linker related chemical modificatio
 relationship: has_handle XLMOD:00051 ! biotin
 relationship: is_labelled XLMOD:00010 ! deuterium labelled
 relationship: is_partially_reacted XLMOD:00021 ! ammonium amidated
-relationship: is_side_product_of XLMOD:02057 ! CBDPSS-d8
+relationship: is_side_product_of XLMOD:02056 ! CBDPSS-d8
 
 [Term]
 id: XLMOD:01051
@@ -1898,7 +1898,7 @@ property_value: monoIsotopicMass: "168.153965" xsd:double
 is_a: XLMOD:00096 ! hydrolization cross-linker related chemical modification
 relationship: is_labelled XLMOD:00010 ! deuterium labelled
 relationship: is_partially_reacted XLMOD:00011 ! hydrolyzed
-relationship: is_side_product_of XLMOD:02064 ! BS3-d12
+relationship: is_side_product_of XLMOD:02063 ! BS3-d12
 
 [Term]
 id: XLMOD:01052
@@ -1909,7 +1909,7 @@ property_value: monoIsotopicMass: "167.169950" xsd:double
 is_a: XLMOD:00095 ! ammonium amidation cross-linker related chemical modification
 relationship: is_labelled XLMOD:00010 ! deuterium labelled
 relationship: is_partially_reacted XLMOD:00021 ! ammonium amidated
-relationship: is_side_product_of XLMOD:02064 ! BS3-d12
+relationship: is_side_product_of XLMOD:02063 ! BS3-d12
 
 [Term]
 id: XLMOD:01053
@@ -1920,7 +1920,7 @@ property_value: monoIsotopicMass: "120.069355" xsd:double
 is_a: XLMOD:00096 ! hydrolization cross-linker related chemical modification
 relationship: is_labelled XLMOD:00010 ! deuterium labelled
 relationship: is_partially_reacted XLMOD:00011 ! hydrolyzed
-relationship: is_side_product_of XLMOD:02065 ! DSG-d6
+relationship: is_side_product_of XLMOD:02064 ! DSG-d6
 
 [Term]
 id: XLMOD:01054
@@ -1931,7 +1931,7 @@ property_value: monoIsotopicMass: "119.085339" xsd:double
 is_a: XLMOD:00095 ! ammonium amidation cross-linker related chemical modification
 relationship: is_labelled XLMOD:00010 ! deuterium labelled
 relationship: is_partially_reacted XLMOD:00021 ! ammonium amidated
-relationship: is_side_product_of XLMOD:02065 ! DSG-d6
+relationship: is_side_product_of XLMOD:02064 ! DSG-d6
 
 [Term]
 id: XLMOD:01055
@@ -1942,7 +1942,7 @@ property_value: monoIsotopicMass: "120.069355" xsd:double
 is_a: XLMOD:00096 ! hydrolization cross-linker related chemical modification
 relationship: is_labelled XLMOD:00010 ! deuterium labelled
 relationship: is_partially_reacted XLMOD:00011 ! hydrolyzed
-relationship: is_side_product_of XLMOD:02066 ! BS2G-d6
+relationship: is_side_product_of XLMOD:02065 ! BS2G-d6
 
 [Term]
 id: XLMOD:01056
@@ -1953,7 +1953,7 @@ property_value: monoIsotopicMass: "119.085339" xsd:double
 is_a: XLMOD:00095 ! ammonium amidation cross-linker related chemical modification
 relationship: is_labelled XLMOD:00010 ! deuterium labelled
 relationship: is_partially_reacted XLMOD:00021 ! ammonium amidated
-relationship: is_side_product_of XLMOD:02066 ! BS2G-d6
+relationship: is_side_product_of XLMOD:02065 ! BS2G-d6
 
 [Term]
 id: XLMOD:01057
@@ -1963,7 +1963,7 @@ property_value: deadEndFormula: "C8 H16 N4 O1" xsd:string
 property_value: monoIsotopicMass: "184.132411" xsd:double
 is_a: XLMOD:00096 ! hydrolization cross-linker related chemical modification
 relationship: is_partially_reacted XLMOD:00011 ! hydrolyzed
-relationship: is_side_product_of XLMOD:02058 ! SDH
+relationship: is_side_product_of XLMOD:02057 ! SDH
 
 [Term]
 id: XLMOD:01058
@@ -1974,7 +1974,7 @@ property_value: monoIsotopicMass: "196.207732" xsd:double
 is_a: XLMOD:00096 ! hydrolization cross-linker related chemical modification
 relationship: is_labelled XLMOD:00010 ! deuterium labelled
 relationship: is_partially_reacted XLMOD:00011 ! hydrolyzed
-relationship: is_side_product_of XLMOD:02059 ! SDH-d12
+relationship: is_side_product_of XLMOD:02058 ! SDH-d12
 
 [Term]
 id: XLMOD:01059
@@ -1984,7 +1984,7 @@ property_value: deadEndFormula: "C6 H12 N4 O1" xsd:string
 property_value: monoIsotopicMass: "156.101111" xsd:double
 is_a: XLMOD:00096 ! hydrolization cross-linker related chemical modification
 relationship: is_partially_reacted XLMOD:00011 ! hydrolyzed
-relationship: is_side_product_of XLMOD:02060 ! ADH
+relationship: is_side_product_of XLMOD:02059 ! ADH
 
 [Term]
 id: XLMOD:01060
@@ -2005,7 +2005,7 @@ property_value: deadEndFormula: "C5 H10 N4 O1" xsd:string
 property_value: monoIsotopicMass: "142.085461" xsd:double
 is_a: XLMOD:00096 ! hydrolization cross-linker related chemical modification
 relationship: is_partially_reacted XLMOD:00011 ! hydrolyzed
-relationship: is_side_product_of XLMOD:02062 ! GDH
+relationship: is_side_product_of XLMOD:02061 ! GDH
 
 [Term]
 id: XLMOD:01062
@@ -2016,7 +2016,7 @@ property_value: monoIsotopicMass: "148.123121" xsd:double
 is_a: XLMOD:00096 ! hydrolization cross-linker related chemical modification
 relationship: is_labelled XLMOD:00010 ! deuterium labelled
 relationship: is_partially_reacted XLMOD:00011 ! hydrolyzed
-relationship: is_side_product_of XLMOD:02063 ! GDH-d6
+relationship: is_side_product_of XLMOD:02062 ! GDH-d6
 
 [Term]
 id: XLMOD:01063
@@ -2026,7 +2026,7 @@ property_value: monoIsotopicMass: "355.12019" xsd:double
 is_a: XLMOD:00096 ! hydrolization cross-linker related chemical modification
 relationship: has_handle XLMOD:00051 ! biotin
 relationship: is_partially_reacted XLMOD:00011 ! hydrolyzed
-relationship: is_side_product_of XLMOD:02108 ! BCCL1
+relationship: is_side_product_of XLMOD:02107 ! BCCL1
 
 [Term]
 id: XLMOD:01064
@@ -2036,7 +2036,7 @@ property_value: monoIsotopicMass: "411.18179" xsd:double
 is_a: XLMOD:00096 ! hydrolization cross-linker related chemical modification
 relationship: has_handle XLMOD:00051 ! biotin
 relationship: is_partially_reacted XLMOD:00011 ! hydrolyzed
-relationship: is_side_product_of XLMOD:02109 ! BCCL2
+relationship: is_side_product_of XLMOD:02108 ! BCCL2
 
 [Term]
 id: XLMOD:01065
@@ -2045,7 +2045,7 @@ def: "Hydrolyzed dibenzoyloxysuccinimidylethyl phosphate." [PMID:18517224]
 property_value: monoIsotopicMass: "348.0" xsd:double
 is_a: XLMOD:00096 ! hydrolization cross-linker related chemical modification
 relationship: is_partially_reacted XLMOD:00011 ! hydrolyzed
-relationship: is_side_product_of XLMOD:02116 ! ICRX
+relationship: is_side_product_of XLMOD:02114 ! IRCX
 
 [Term]
 id: XLMOD:01066
@@ -2054,7 +2054,7 @@ def: "Hydrolyzed bis(succinimidyl)-3-azidomethyl glutarate." [PMID:20472459]
 property_value: monoIsotopicMass: "229.0" xsd:double
 is_a: XLMOD:00096 ! hydrolization cross-linker related chemical modification
 relationship: is_partially_reacted XLMOD:00011 ! hydrolyzed
-relationship: is_side_product_of XLMOD:02118 ! azide-DSG
+relationship: is_side_product_of XLMOD:02116 ! azide-DSG
 
 [Term]
 id: XLMOD:01067
@@ -2063,7 +2063,7 @@ def: "Hydrolyzed crosslinking reagent JMV 3378." [PMID:19902427]
 property_value: monoIsotopicMass: "286.0" xsd:double
 is_a: XLMOD:00096 ! hydrolization cross-linker related chemical modification
 relationship: is_partially_reacted XLMOD:00011 ! hydrolyzed
-relationship: is_side_product_of XLMOD:02120 ! JMV 3378
+relationship: is_side_product_of XLMOD:02118 ! JMV 3378
 
 [Term]
 id: XLMOD:01068
@@ -2072,7 +2072,7 @@ def: "Hydrolyzed 4-[3-(2-{2-[(2,5-dioxo-pyrrolidin-1-yloxycarbonyl-methyl)-carba
 property_value: monoIsotopicMass: "1704.86" xsd:double
 is_a: XLMOD:00096 ! hydrolization cross-linker related chemical modification
 relationship: is_partially_reacted XLMOD:00011 ! hydrolyzed
-relationship: is_side_product_of XLMOD:02121 ! BuTuGPG
+relationship: is_side_product_of XLMOD:02119 ! BuTuGPG
 
 [Term]
 id: XLMOD:01069
@@ -2080,7 +2080,7 @@ name: hydrolyzed BuUrBu
 def: "Hydrolyzed NHS-amino butyric acid-urea-amino butyric acid-NHS." [PMID:21157862]
 is_a: XLMOD:00096 ! hydrolization cross-linker related chemical modification
 relationship: is_partially_reacted XLMOD:00011 ! hydrolyzed
-relationship: is_side_product_of XLMOD:02122 ! BuUrBu
+relationship: is_side_product_of XLMOD:02120 ! BuUrBu
 
 [Term]
 id: XLMOD:01070
@@ -2090,7 +2090,7 @@ property_value: deadEndFormula: "C8 H14 N2 O1" xsd:string
 property_value: monoIsotopicMass: "154.110613" xsd:double
 is_a: XLMOD:00096 ! hydrolization cross-linker related chemical modification
 relationship: is_partially_reacted XLMOD:00011 ! hydrolyzed
-relationship: is_side_product_of XLMOD:02129 ! DEST
+relationship: is_side_product_of XLMOD:02127 ! DEST
 
 [Term]
 id: XLMOD:01071
@@ -2100,7 +2100,7 @@ property_value: deadEndFormula: "C8 H15 N3" xsd:string
 property_value: monoIsotopicMass: "153.126597" xsd:double
 is_a: XLMOD:00095 ! ammonium amidation cross-linker related chemical modification
 relationship: is_partially_reacted XLMOD:00021 ! ammonium amidated
-relationship: is_side_product_of XLMOD:02129 ! DEST
+relationship: is_side_product_of XLMOD:02127 ! DEST
 
 [Term]
 id: XLMOD:01072
@@ -2110,7 +2110,7 @@ property_value: deadEndFormula: "C10 H17 N1 O1 S1" xsd:string
 property_value: monoIsotopicMass: "199.103085" xsd:double
 is_a: XLMOD:00098 ! thioesterization cross-linker related chemical modification
 relationship: is_partially_reacted XLMOD:00047 ! thioesterized
-relationship: is_side_product_of XLMOD:02129 ! DEST
+relationship: is_side_product_of XLMOD:02127 ! DEST
 
 [Term]
 id: XLMOD:01073
@@ -2140,7 +2140,7 @@ property_value: deadEndFormula: "C6 H8 O7 S1" xsd:string
 property_value: monoIsotopicMass: "223.999074" xsd:double
 is_a: XLMOD:00096 ! hydrolization cross-linker related chemical modification
 relationship: is_partially_reacted XLMOD:00011 ! hydrolyzed
-relationship: is_side_product_of XLMOD:02079 ! BSOCOES
+relationship: is_side_product_of XLMOD:02078 ! BSOCOES
 
 [Term]
 id: XLMOD:01076
@@ -2150,7 +2150,7 @@ property_value: deadEndFormula: "C6 H9 N1 O6 S1" xsd:string
 property_value: monoIsotopicMass: "223.015058" xsd:double
 is_a: XLMOD:00095 ! ammonium amidation cross-linker related chemical modification
 relationship: is_partially_reacted XLMOD:00021 ! ammonium amidated
-relationship: is_side_product_of XLMOD:02079 ! BSOCOES
+relationship: is_side_product_of XLMOD:02078 ! BSOCOES
 
 [Term]
 id: XLMOD:01077
@@ -2180,7 +2180,7 @@ property_value: deadEndFormula: "C5 H8 O2" xsd:string
 property_value: monoIsotopicMass: "100.052429" xsd:double
 is_a: XLMOD:00096 ! hydrolization cross-linker related chemical modification
 relationship: is_partially_reacted XLMOD:00011 ! hydrolyzed
-relationship: is_side_product_of XLMOD:02138 ! SDA
+relationship: is_side_product_of XLMOD:02134 ! SDA
 
 [Term]
 id: XLMOD:01080
@@ -2190,7 +2190,7 @@ property_value: deadEndFormula: "C5 H6 O2" xsd:string
 property_value: monoIsotopicMass: "98.036779" xsd:double
 is_a: XLMOD:00097 ! oxidation cross-linker related chemical modification
 relationship: is_partially_reacted XLMOD:00064 ! oxidized
-relationship: is_side_product_of XLMOD:02138 ! SDA
+relationship: is_side_product_of XLMOD:02134 ! SDA
 
 [Term]
 id: XLMOD:01081
@@ -2198,9 +2198,9 @@ name: alkenized SDA
 def: "Alkenized succinimidyl-ester diazirine." [PSI:XL]
 property_value: deadEndFormula: "C4 H4 O1" xsd:string
 property_value: monoIsotopicMass: "68.026215" xsd:double
-is_a: XLMOD:00094 ! alkenization cross-linker related chemical modification
+is_a: XLMOD:00094 ! alkenized cross-linker related chemical modification
 relationship: is_partially_reacted XLMOD:00065 ! alkenized
-relationship: is_side_product_of XLMOD:02138 ! SDA
+relationship: is_side_product_of XLMOD:02134 ! SDA
 
 [Term]
 id: XLMOD:01082
@@ -2210,7 +2210,7 @@ property_value: deadEndFormula: "C11 H19 N1 O3" xsd:string
 property_value: monoIsotopicMass: "213.136493" xsd:double
 is_a: XLMOD:00096 ! hydrolization cross-linker related chemical modification
 relationship: is_partially_reacted XLMOD:00011 ! hydrolyzed
-relationship: is_side_product_of XLMOD:02139 ! LC-SDA
+relationship: is_side_product_of XLMOD:02135 ! LC-SDA
 
 [Term]
 id: XLMOD:01083
@@ -2220,7 +2220,7 @@ property_value: deadEndFormula: "C11 H17 N1 O3" xsd:string
 property_value: monoIsotopicMass: "211.120843" xsd:double
 is_a: XLMOD:00097 ! oxidation cross-linker related chemical modification
 relationship: is_partially_reacted XLMOD:00064 ! oxidized
-relationship: is_side_product_of XLMOD:02139 ! LC-SDA
+relationship: is_side_product_of XLMOD:02135 ! LC-SDA
 
 [Term]
 id: XLMOD:01084
@@ -2228,9 +2228,9 @@ name: alkenized LC-SDA
 def: "Alkenized LC-SDA." [PSI:XL]
 property_value: deadEndFormula: "C10 H15 N1 O2" xsd:string
 property_value: monoIsotopicMass: "181.110279" xsd:double
-is_a: XLMOD:00094 ! alkenization cross-linker related chemical modification
+is_a: XLMOD:00094 ! alkenized cross-linker related chemical modification
 relationship: is_partially_reacted XLMOD:00065 ! alkenized
-relationship: is_side_product_of XLMOD:02139 ! LC-SDA
+relationship: is_side_product_of XLMOD:02135 ! LC-SDA
 
 [Term]
 id: XLMOD:01085
@@ -2258,7 +2258,7 @@ name: alkenized L-Photo-Leucine
 def: "Alkenized L-2-amino-4,4-azi-pentanoic acid." [PSI:XL]
 property_value: deadEndFormula: "-C2 -H6" xsd:string
 property_value: monoIsotopicMass: "-30.046950" xsd:double
-is_a: XLMOD:00094 ! alkenization cross-linker related chemical modification
+is_a: XLMOD:00094 ! alkenized cross-linker related chemical modification
 relationship: is_partially_reacted XLMOD:00065 ! alkenized
 relationship: is_side_product_of XLMOD:01900 ! L-Photo-Leucine
 
@@ -2288,7 +2288,7 @@ name: alkenized L-Photo-Methionine
 def: "Alkenized L-2-amino-5,5-azi-hexanoic acid." [PSI:XL]
 property_value: deadEndFormula: "-H2 -S1" xsd:string
 property_value: monoIsotopicMass: "-33.987721" xsd:double
-is_a: XLMOD:00094 ! alkenization cross-linker related chemical modification
+is_a: XLMOD:00094 ! alkenized cross-linker related chemical modification
 relationship: is_partially_reacted XLMOD:00065 ! alkenized
 relationship: is_side_product_of XLMOD:01901 ! L-Photo-Methionine
 
@@ -2298,7 +2298,7 @@ name: hydrolyzed BMOE
 def: "Hydrolyzed bis-Maleimidoethane." [PSI:XL]
 is_a: XLMOD:00096 ! hydrolization cross-linker related chemical modification
 relationship: is_partially_reacted XLMOD:00011 ! hydrolyzed
-relationship: is_side_product_of XLMOD:02188 ! BMOE
+relationship: is_side_product_of XLMOD:02176 ! BMOE
 
 [Term]
 id: XLMOD:01092
@@ -2328,7 +2328,7 @@ property_value: bridgeFormula: "C7 H12 N4" xsd:string
 property_value: monoIsotopicMass: "152.106196" xsd:double
 is_a: XLMOD:00096 ! hydrolization cross-linker related chemical modification
 relationship: is_partially_reacted XLMOD:00011 ! hydrolyzed
-relationship: is_side_product_of XLMOD:02223 ! PDH
+relationship: is_side_product_of XLMOD:02209 ! PDH
 
 [Term]
 id: XLMOD:01095
@@ -2340,7 +2340,7 @@ is_a: XLMOD:00096 ! hydrolization cross-linker related chemical modification
 relationship: is_labelled XLMOD:00010 ! deuterium labelled
 relationship: is_labelled_version_of XLMOD:01094 ! hydrolyzed PDH
 relationship: is_partially_reacted XLMOD:00011 ! hydrolyzed
-relationship: is_side_product_of XLMOD:02224 ! PDH-d10
+relationship: is_side_product_of XLMOD:02210 ! PDH-d10
 
 [Term]
 id: XLMOD:01096
@@ -2377,7 +2377,7 @@ name: alkenized L-Photo-Isoleucine
 def: "Alkenized L-Photo-Isoleucine." [PSI:XL]
 property_value: deadEndFormula: "-C2 -H6" xsd:string
 property_value: monoIsotopicMass: "-30.046950" xsd:double
-is_a: XLMOD:00094 ! alkenization cross-linker related chemical modification
+is_a: XLMOD:00094 ! alkenized cross-linker related chemical modification
 relationship: is_partially_reacted XLMOD:00065 ! alkenized
 relationship: is_side_product_of XLMOD:01902 ! L-Photo-Isoleucine
 
@@ -3245,7 +3245,7 @@ property_value: reactionSites: "2" xsd:nonNegativeInteger
 is_a: XLMOD:00008 ! zero-length cross-linker
 is_a: XLMOD:06010 ! LCMS derivatization reagent
 relationship: has_property XLMOD:00014 ! hydrophilic
-relationship: has_reactive_group XLMOD:00105 ! Carbodiimide
+relationship: has_reactive_group XLMOD:00105 ! carbodiimide
 relationship: is_reactive_with XLMOD:00030 ! carboxyl reactive
 
 [Term]
@@ -3630,7 +3630,7 @@ synonym: "N,N'-Methanetetrayl biscyclohexanamine" EXACT []
 property_value: reactionSites: "2" xsd:nonNegativeInteger
 is_a: XLMOD:00008 ! zero-length cross-linker
 relationship: has_property XLMOD:00013 ! membrane permeable
-relationship: has_reactive_group XLMOD:00105 ! Carbodiimide
+relationship: has_reactive_group XLMOD:00105 ! carbodiimide
 
 [Term]
 id: XLMOD:02038
@@ -3672,7 +3672,7 @@ property_value: reactionSites: "1" xsd:nonNegativeInteger
 property_value: spacerLength: "2.5" xsd:float
 is_a: XLMOD:00005 ! homofunctional cross-linker
 is_a: XLMOD:06010 ! LCMS derivatization reagent
-relationship: has_reactive_group XLMOD:00116 ! aldehyde
+relationship: has_reactive_group XLMOD:00116 ! aldehyde group
 relationship: is_reactive_with XLMOD:00037 ! non-selective
 
 [Term]
@@ -3681,7 +3681,7 @@ name: glutardialdehyde
 def: "Glutardialdehyde." [CAS:111-30-8, ChemSpiderID:3365, ChemicalBookNo:CB3762723]
 property_value: reactionSites: "2" xsd:nonNegativeInteger
 is_a: XLMOD:00005 ! homofunctional cross-linker
-relationship: has_reactive_group XLMOD:00116 ! aldehyde
+relationship: has_reactive_group XLMOD:00116 ! aldehyde group
 relationship: is_reactive_with XLMOD:00037 ! non-selective
 
 [Term]
@@ -4980,7 +4980,7 @@ property_value: reactionSites: "2" xsd:nonNegativeInteger
 property_value: spacerLength: "23.6" xsd:float
 is_a: XLMOD:00006 ! heterofunctional cross-linker
 relationship: has_property XLMOD:00013 ! membrane permeable
-relationship: has_reactive_group XLMOD:00102 ! Sulfo-NHS ester
+relationship: has_reactive_group XLMOD:00102 ! Sulfo NHS ester
 relationship: has_reactive_group XLMOD:00135 ! azido-methylcoumarin
 relationship: is_cleavable XLMOD:00023 ! cleavable S-S bond
 
@@ -6921,7 +6921,7 @@ id: XLMOD:07018
 name: trifluoroacetylimidazole
 def: "Trifluoroacetylimidazole." [Beilstein:608904, CAS:1546-79-8, ChemSpiderID:66407, ChemicalBookNo:CB7308204, DOI:10.5772/33098, MDL:MFCD00014501, PubChem_Compound:73767]
 synonym: "TFAI" EXACT []
-is_a: XLMOD:06005 ! fluoracylimidazole reagent
+is_a: XLMOD:06006 ! fluoracylimidazole reagent
 is_a: XLMOD:06015 ! TFA reagent
 relationship: is_reactive_with XLMOD:06501 ! active hydrogen reactive
 
@@ -6930,7 +6930,7 @@ id: XLMOD:07019
 name: pentafluoropropanylimidazole
 def: "Pentafluoropropanylimidazole." [DOI:10.5772/33098]
 synonym: "PFPI" EXACT []
-is_a: XLMOD:06005 ! fluoracylimidazole reagent
+is_a: XLMOD:06006 ! fluoracylimidazole reagent
 relationship: is_reactive_with XLMOD:06501 ! active hydrogen reactive
 
 [Term]
@@ -6938,7 +6938,7 @@ id: XLMOD:07020
 name: heptafluorobutyrylimidazole
 def: "Heptafluorobutyrylimidazole." [CAS:32477-35-3, ChemSpiderID:85218, ChemicalBookNo:CB4100522, DOI:10.5772/33098, MDL:MFCD00014503, PubChem_Compound:94431]
 synonym: "HFBI" EXACT []
-is_a: XLMOD:06005 ! fluoracylimidazole reagent
+is_a: XLMOD:06006 ! fluoracylimidazole reagent
 relationship: is_reactive_with XLMOD:00028 ! primary amine reactive
 relationship: is_reactive_with XLMOD:00032 ! hydroxyl reactive
 relationship: is_reactive_with XLMOD:06501 ! active hydrogen reactive
@@ -6960,7 +6960,7 @@ id: XLMOD:07022
 name: pentafluorobenzoyl chloride
 def: "Pentafluorobenzoyl chloride." [Beilstein:2054397, CAS:2251-50-5, ChemSpiderID:67799, ChemicalBookNo:CB6191348, DOI:10.5772/33098, MDL:MFCD00000657, PubChem_Compound:75256]
 synonym: "PFBC" EXACT []
-is_a: XLMOD:06003 ! acylation reagent
+is_a: XLMOD:06004 ! acylation reagent
 is_a: XLMOD:06010 ! LCMS derivatization reagent
 relationship: has_reactive_group XLMOD:00155 ! acyl chloride
 
@@ -6969,7 +6969,7 @@ id: XLMOD:07023
 name: pentafluoropropanol
 def: "Pentafluoropropanol." [CAS:679-86-7, ChemSpiderID:9488, ChemicalBookNo:CB9689963, DOI:10.5772/33098, MDL:MFCD00153226, PubChem_Compound:168785]
 synonym: "PFPOH" EXACT []
-is_a: XLMOD:06003 ! acylation reagent
+is_a: XLMOD:06004 ! acylation reagent
 relationship: is_reactive_with XLMOD:00030 ! carboxyl reactive
 relationship: is_reactive_with XLMOD:06501 ! active hydrogen reactive
 
@@ -6978,7 +6978,7 @@ id: XLMOD:07024
 name: 4-Carbethoxyhexafluorobutyrylchloride
 def: "4-Carbethoxyhexafluorobutyrylchloride." [CAS:18381-53-8, ChemSpiderID:141651, ChemicalBookNo:CB2153034, DOI:10.5772/33098, PubChem_Compound:161251]
 synonym: "4-CB" EXACT []
-is_a: XLMOD:06003 ! acylation reagent
+is_a: XLMOD:06004 ! acylation reagent
 relationship: is_reactive_with XLMOD:00028 ! primary amine reactive
 
 [Term]
@@ -7105,7 +7105,7 @@ id: XLMOD:07039
 name: N-Acetylimidazole
 def: "N-Acetylimidazole." [CAS:2466-76-4, ChemSpiderID:16257, ChemicalBookNo:CB9339608, PubChem_Compound:17174]
 synonym: "AIM" EXACT []
-is_a: XLMOD:06003 ! acylation reagent
+is_a: XLMOD:06004 ! acylation reagent
 
 [Term]
 id: XLMOD:07040
@@ -9237,7 +9237,7 @@ name: 13C labelled formaldehyde
 def: "13C labelled formaldehyde reagent." [PMID:23628173]
 synonym: "13C-formaldehyde" EXACT []
 is_a: XLMOD:06010 ! LCMS derivatization reagent
-relationship: has_reactive_group XLMOD:00116 ! aldehyde
+relationship: has_reactive_group XLMOD:00116 ! aldehyde group
 relationship: is_labelled XLMOD:00036 ! 13C labelled
 relationship: is_reactive_with XLMOD:00028 ! primary amine reactive
 
@@ -10381,7 +10381,7 @@ property_value: reactionSites: "2" xsd:nonNegativeInteger
 property_value: specificities: "(Q)&(K)" xsd:string
 is_a: XLMOD:00006 ! heterofunctional cross-linker
 is_a: XLMOD:00008 ! zero-length cross-linker
-relationship: is_labelled XLMOD:09318 ! enzymatic generated
+relationship: is_labelled XLMOD:09318 ! enzymatic generated cross-link
 relationship: is_labelled XLMOD:09319 ! transglutaminase generated
 relationship: is_reactive_with XLMOD:00028 ! primary amine reactive
 
