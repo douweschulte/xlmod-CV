@@ -3700,8 +3700,8 @@ relationship: has_reactive_group XLMOD:00101 ! NHS ester
 id: XLMOD:02044
 name: DNBDPS
 def: "An isotopically-coded cleavable crosslinker affinity-purifyable with antibodies." [PMID:20109223]
-property_value: bridgeFormula: "C12 H9 N2 O6 S2" xsd:string
-property_value: monoIsotopicMass: "340.990203" xsd:double
+property_value: bridgeFormula: "C12 H8 N2 O6 S2" xsd:string
+property_value: monoIsotopicMass: "339.982378" xsd:double
 property_value: reactionSites: "2" xsd:nonNegativeInteger
 is_a: XLMOD:00005 ! homofunctional cross-linker
 relationship: has_handle XLMOD:00054 ! DNB
@@ -4777,8 +4777,8 @@ def: "NHS-LC-Diazirine." [PSI:XL]
 synonym: "Long Chain-SDA" EXACT []
 synonym: "NHS-LC-Diazirine" EXACT []
 synonym: "Succinimidyl 6-(4,4'-azipentanamido)hexanoate" EXACT []
-property_value: bridgeFormula: "C11 H12 N1 O2" xsd:string
-property_value: monoIsotopicMass: "190.086804" xsd:double
+property_value: bridgeFormula: "C11 H17 N1 O2" xsd:string
+property_value: monoIsotopicMass: "195.125929" xsd:double
 property_value: reactionSites: "2" xsd:nonNegativeInteger
 property_value: spacerLength: "12.5" xsd:float
 is_a: XLMOD:00006 ! heterofunctional cross-linker
@@ -6271,8 +6271,8 @@ relationship: is_cleavable XLMOD:00024 ! periodate cleavable
 id: XLMOD:03009
 name: NNP9
 def: "NNP9 cross-linker." [PMID:25522193]
-property_value: bridgeFormula: "C7 H2 D10 N4" xsd:string
-property_value: monoIsotopicMass: "162.168964" xsd:double
+property_value: bridgeFormula: "C14 H14 O3 N6" xsd:string
+property_value: monoIsotopicMass: "314.112738" xsd:double
 property_value: reactionSites: "3" xsd:nonNegativeInteger
 property_value: spacerLength: "10.0" xsd:float
 is_a: XLMOD:00005 ! homofunctional cross-linker
