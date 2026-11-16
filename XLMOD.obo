@@ -1599,7 +1599,7 @@ relationship: is_side_product_of XLMOD:02040 ! BiPS
 id: XLMOD:01024
 name: ammonium amidated BiPS
 def: "Ammonium amidated bimane bisthiopropionic acid N-succinimidyl ester." [PMID:18838738]
-property_value: deadEndFormula: "C16 H19 N3 O4 S2" xsd:string
+property_value: deadEndFormula: "C16 H18 N3 O4 S2" xsd:string
 property_value: monoIsotopicMass: "381.081698" xsd:double
 is_a: XLMOD:00095 ! ammonium amidation cross-linker related chemical modification
 relationship: is_partially_reacted XLMOD:00021 ! ammonium amidated
@@ -1662,7 +1662,7 @@ relationship: is_side_product_of XLMOD:02044 ! DNBDPS
 id: XLMOD:01030
 name: ammonium amidated DNBDPS
 def: "Ammonium amidated DNBDPS." [PMID:20109223]
-property_value: deadEndFormula: "C12 H10 N3 O6 S2" xsd:string
+property_value: deadEndFormula: "C12 H11 N3 O6 S2" xsd:string
 property_value: monoIsotopicMass: "356.001102" xsd:double
 is_a: XLMOD:00095 ! ammonium amidation cross-linker related chemical modification
 relationship: has_handle XLMOD:00054 ! DNB
@@ -2126,7 +2126,7 @@ relationship: is_side_product_of XLMOD:02198 ! BS(PEG)5
 id: XLMOD:01074
 name: ammonium amidated BS(PEG)5
 def: "Ammonium amidated bis(sulfosuccinimidyl)suberate pentaethyleneglycol." [PSI:XL]
-property_value: deadEndFormula: "C14 H27 N1 O7" xsd:string
+property_value: deadEndFormula: "C14 H24 N1 O7" xsd:string
 property_value: monoIsotopicMass: "321.178752" xsd:double
 is_a: XLMOD:00095 ! ammonium amidation cross-linker related chemical modification
 relationship: is_partially_reacted XLMOD:00021 ! ammonium amidated
@@ -2324,7 +2324,7 @@ relationship: is_side_product_of XLMOD:02013 ! BMPS
 id: XLMOD:01094
 name: hydrolyzed PDH
 def: "Hydrolyzed pimelic acid dihydrazide." [PSI:XL]
-property_value: bridgeFormula: "C7 H12 N4" xsd:string
+property_value: deadEndFormula: "C7 H14 N4 O1" xsd:string
 property_value: monoIsotopicMass: "152.106196" xsd:double
 is_a: XLMOD:00096 ! hydrolization cross-linker related chemical modification
 relationship: is_partially_reacted XLMOD:00011 ! hydrolyzed
@@ -2334,7 +2334,7 @@ relationship: is_side_product_of XLMOD:02209 ! PDH
 id: XLMOD:01095
 name: hydrolyzed PDH-d10
 def: "Deuterium labelled hydrolyzed pimelic acid dihydrazide." [PSI:XL]
-property_value: bridgeFormula: "C7 H2 D10 N4" xsd:string
+property_value: deadEndFormula: "C7 H4 D10 N4 O1" xsd:string
 property_value: monoIsotopicMass: "162.168964" xsd:double
 is_a: XLMOD:00096 ! hydrolization cross-linker related chemical modification
 relationship: is_labelled XLMOD:00010 ! deuterium labelled
