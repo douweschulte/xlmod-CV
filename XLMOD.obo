@@ -1271,7 +1271,7 @@ relationship: is_reactive_with XLMOD:06500 ! secondary amine reactive
 
 [Term]
 id: XLMOD:00164
-name: carabamate
+name: carbamate
 def: "A carbamate (O-CO-N) reactive group." [PMID:21557289]
 synonym: "urethane" EXACT []
 is_a: XLMOD:00100 ! reactive group
@@ -1311,7 +1311,7 @@ is_a: XLMOD:00100 ! reactive group
 relationship: is_reactive_with XLMOD:00029 ! sulfhydryl reactive
 relationship: is_reactive_with XLMOD:00030 ! carboxyl reactive
 relationship: is_reactive_with XLMOD:06509 ! phenol reactive
-relationship: is_reactive_with XLMOD:06521 ! phophate reactive
+relationship: is_reactive_with XLMOD:06521 ! phosphate reactive
 
 [Term]
 id: XLMOD:00169
@@ -1328,7 +1328,7 @@ is_a: XLMOD:00100 ! reactive group
 relationship: is_reactive_with XLMOD:00029 ! sulfhydryl reactive
 relationship: is_reactive_with XLMOD:00030 ! carboxyl reactive
 relationship: is_reactive_with XLMOD:06509 ! phenol reactive
-relationship: is_reactive_with XLMOD:06521 ! phophate reactive
+relationship: is_reactive_with XLMOD:06521 ! phosphate reactive
 
 [Term]
 id: XLMOD:00171
@@ -2578,7 +2578,7 @@ def: "Heteroconjugate 20 reagent." [PMID:26335278]
 synonym: "HC20" EXACT []
 property_value: monoIsotopicMass: "1554.6871" xsd:double
 property_value: reactionSites: "2" xsd:nonNegativeInteger
-is_a: XLMOD:00005 ! bifunctional cross-linker
+is_a: XLMOD:00006 ! heterofunctional cross-linker
 relationship: has_handle XLMOD:00051 ! biotin
 
 [Term]
@@ -6689,7 +6689,7 @@ is_a: XLMOD:00027 ! chemically reactive
 
 [Term]
 id: XLMOD:06521
-name: phophate reactive
+name: phosphate reactive
 def: "Indicates that a derivatization reagent is reactive with phosphate." [PSI:XL]
 is_a: XLMOD:00027 ! chemically reactive
 
